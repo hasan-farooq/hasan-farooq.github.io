@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hasan Farooq — efficient vision-language models, reasoning, and spatial grounding.">
+  <title>Hasan Farooq</title>
+  <script>document.documentElement.dataset.theme='dark';try{if(localStorage.getItem('portfolio-theme')==='light')document.documentElement.dataset.theme='light'}catch{}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <main>
+    <header>
+      <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">☾</span><span class="theme-toggle-label">Dark</span></button>
+      <div class="identity"><h1>Hasan Farooq<span class="name-dot" aria-hidden="true">.</span></h1><div class="contact-line"><a href="mailto:hasan.farooq@lhr.nu.edu.pk">hasan.farooq@lhr.nu.edu.pk</a><button class="copy-email" type="button" aria-label="Copy email address"><span class="clipboard-icon" aria-hidden="true"></span><span class="copy-label">Copy</span></button><span class="copy-status" role="status"></span></div><p class="phd-note">I’m seeking PhD opportunities starting <strong>Fall 2027</strong>.</p></div>
+      
+    </header>
+    <section id="about" aria-label="About">
+      <h2 class="research-question">I’m interested in how models see and reason—<br><em>and why they hallucinate.</em></h2>
+      <div class="model-demo" data-mode="grounded" data-stage="0" data-theme="grounded" aria-label="Small interactive thought experiments">
+        <div class="experiments-heading"><span class="demo-label"><span class="thought-emoji" aria-hidden="true">🧐</span> SMALL THOUGHT EXPERIMENTS</span></div>
+        <div class="experiment-themes" role="group" aria-label="Research themes"><button type="button" data-theme="grounded" aria-pressed="true">Model Reasoning</button><button type="button" data-theme="efficiency" aria-pressed="false">Efficient training</button><button type="button" data-theme="applied" aria-pressed="false">Applied AI</button></div>
+        <div class="experiment-panel" data-panel="grounded">
+        <div class="demo-scene">
+          <div class="visual-example"><div class="synthetic-image" role="img" aria-label="A schematic image with a circle in the upper right and a square in the center left"><div class="image-square"></div><div class="image-region"></div><div class="region-box"></div><span class="image-axis">IMAGE EVIDENCE</span></div><button type="button" class="change-image">Move the circle ↕</button></div>
+          <div class="demo-process"><p class="demo-query">“Is the circle above the square?”</p><div class="process-track" aria-hidden="true"><span class="process-node" data-step="0">See</span><span class="process-wire"></span><span class="process-node" data-step="1">Ground</span><span class="process-wire"></span><span class="process-node" data-step="2">Answer</span></div><p class="demo-explanation">Start with the image and the question.</p><div class="demo-answer"><span class="answer-label">MODEL RESPONSE</span><span class="answer-value">Looking at the image…</span><span class="answer-status"></span></div></div>
+        </div>
+        <div class="demo-bottom"><p class="demo-takeaway" aria-live="polite">An answer should be supported by what the model can see.</p><button class="demo-play" type="button">Pause</button></div>
+        </div>
+        <div class="experiment-panel" data-panel="efficiency" hidden>
+          <p class="experiment-intro">How do models learn more from less?</p>
+          <div class="experiment-scene"><div class="training-map" role="img" aria-label="Model blocks, with selected trainable parameters"><div class="training-block">Vision encoder</div><div class="training-block">Language backbone</div><div class="training-adapter">Small adapter</div><span class="training-key">A conceptual view of model adaptation</span></div><div class="experiment-detail"><p>Explore how data, supervision, and adaptation shape what a model learns.</p><div class="experiment-actions"><button type="button" class="training-policy" data-policy="full" aria-pressed="true">Fine-tuning</button><button type="button" class="training-policy" data-policy="adapter" aria-pressed="false">Selective adaptation</button><button type="button" class="training-policy" data-policy="data" aria-pressed="false">Informative examples</button><button type="button" class="training-policy" data-policy="compute" aria-pressed="false">Learning signals</button></div><div class="experiment-result" aria-live="polite"><strong class="training-value">Adapt learned representations</strong><p class="training-copy">How does updating a pretrained model change the representations it has learned?</p></div></div></div>
+        </div>
+        <div class="experiment-panel" data-panel="applied" hidden>
+          <p class="experiment-intro">What happens when a model meets a different world?</p>
+          <div class="environment-list"><button type="button" data-environment="data" aria-pressed="true">Visual variation</button><button type="button" data-environment="resources" aria-pressed="false">New contexts</button><button type="button" data-environment="reliability" aria-pressed="false">Uncertainty</button></div>
+          <div class="generalization-sketch" data-view="data" aria-hidden="true"><div class="sketch-observation"><span class="concept-shape"></span><span class="sketch-caption">What it has seen</span></div><span class="sketch-connection">→</span><div class="sketch-observation new-observation"><span class="concept-shape"></span><span class="sketch-caption">What it encounters</span></div></div>
+          <div class="environment-response" aria-live="polite"><h3 class="environment-title">Same concept, different appearance</h3><p class="environment-copy">Lighting, viewpoint, and visual style can change while the underlying concept stays the same. Which features should a model preserve?</p></div>
+        </div>
+        <p class="demo-footnote">Illustrative, rule-based examples—not live AI models or research benchmarks.</p>
+      </div>
+      
+            
+    </section>
+    <section aria-labelledby="publications">
+      <div class="section-heading"><h2 id="publications">Publications</h2></div>
+      <article class="publication">
+        <a class="thumbnail" href="assets/concept-adapter.png" aria-label="View the Concept Adapter overview"><img src="assets/concept-adapter.png" alt="Concept Adapter constructs query-relevant concepts and spatial masks to condition a frozen medical vision-language model" width="180" height="145"></a>
+        <div class="publication-text">
+        <h3>Mitigating Visual Hallucinations in Frozen Medical Vision–Language Models with Query-Relevant Concepts</h3>
+        <p class="authors"><strong>Hasan Farooq</strong>, Murtaza Taj, Arif Mahmood</p>
+        <p class="meta"><span class="venue">WACV 2026</span><span class="accepted">Accepted</span><span class="proceedings">To appear in the 2027 proceedings</span></p>
+        <p>Concept Adapter learns query-relevant concepts and spatial masks to reduce visual hallucinations while keeping the medical vision-language model frozen.</p>
+        </div>
+      </article>
+      <article class="publication">
+        <a class="thumbnail" href="assets/localization-lens.png" aria-label="View the Localization Lens training diagram"><img src="assets/localization-lens.png" alt="Comparison of standard vision-language training and training with Localization Lens" width="180" height="145" loading="lazy"></a>
+        <div class="publication-text">
+        <h3>Localization Lens for Improving Medical Vision-Language Models</h3>
+        <p class="authors"><strong>Hasan Farooq</strong>, Murtaza Taj, Mehwish Nasim, Arif Mahmood</p>
+        <p class="meta"><span class="venue">MICCAI 2025</span><span class="publication-actions"><a href="https://papers.miccai.org/miccai-2025/paper/2723_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a><span> / </span><a href="https://github.com/CVLABLUMS/localizationlens" target="_blank" rel="noopener noreferrer">Code</a></span></p>
+        <p>Clinically sound visual representations, pixel shuffle, and vision-language alignment to improve anatomical and spatial reasoning.</p>
+        </div>
+      </article>
+      <article class="publication">
+        <a class="thumbnail pathology" href="assets/mitosis.jpg" aria-label="View the mitosis detection Grad-CAM figure"><img src="assets/mitosis.jpg" alt="Histopathology region beside the model’s Grad-CAM prediction and focus heatmap" width="180" height="145" loading="lazy"></a>
+        <div class="publication-text">
+        <h3>Toward interpretable and generalized mitosis detection in digital pathology using deep learning</h3>
+        <p class="authors"><strong>Hasan Farooq</strong>, Saira Saleem, Iffat Aleem, Ayesha Iftikhar, Umer Nisar Sheikh, Hammad Naveed</p>
+        <p class="meta"><span class="venue">Digital Health 2024</span><span class="publication-actions"><a href="https://doi.org/10.1177/20552076241255471" target="_blank" rel="noopener noreferrer">Paper</a><span> / </span><a href="https://docs.google.com/document/d/1-eUvgvzt4yyf1IIKmFtTMljkcfyCyp2lHiY1gxR_EAQ" target="_blank" rel="noopener noreferrer">Code</a></span></p>
+        <p>A compact mitosis detection pipeline designed for robustness and generalization in clinical settings.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="intro.js?v=11" defer></script>
+</body>
+</html>
